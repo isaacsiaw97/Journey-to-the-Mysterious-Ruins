@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	color: #d1d0a6;
+	background-color: #2d2426;
+	font-family: "Inconsolata", monospace;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	display: flex;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main{
+	padding-top: 60px;
+	margin: 0 auto;
+}
+
+h1,h3{
+	text-transform: uppercase;
+	margin: 0 0 30px;
+}
+
+h1{
+	text-align: center;
+	color: #cb5a3c;
+	font-size: 5.75rem;
+	font-weight: 700;
+	padding: 0;
+}
+
+h2{
+	font-size: 1.25rem;
+	line-height: 1.4;
+	font-weight: 400;
+	margin: 0 0 30px;
+}
+
+h4{
+	word-wrap:break-word;
+}
+
+p{
+	margin-bottom: 30px;
+	line-height: 1.5;
+}
+
+a{
+	color: #cb5a3c;
+	height: 100%;
+	width: 100%;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.home{
+	text-decoration:none;
+}
+
+li{
+	color: #b53232;
+	list-style-type:none;
+	margin-bottom: 5px;
+}
+
+ul li{
+	color: #d1d0a6;
+	list-style-type: circle;
+	margin-top:5px;
+}
+
+img{
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+audio{
+	margin-bottom:40px;
+}
+
+.clickable:hover{
+	cursor:pointer;
+}
+
+.puzzleLink{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border: 1px solid #ccc;
+	padding: 1em 16px;
+	border-radius: 16px;
+}
+	
+.answer{
+	color: #55b54c;
+}
+
+input{
+	padding: 12px 18px;
+	border-radius: 8px;
+	border: none;
+	font-size: 1rem;
+}
+
+.workSpace{
+	padding: 12px 18px;
+	width:80px;
+	text-align: center;
+	color: #2b2b2b;
+	font-weight: 700;
+}
+	
+.return{
+	background-color: #d1d0a6;
+	border: none;
+	margin-bottom: 20px;
+	padding: 12px 18px;
+	color: black;
+	border-radius: 8px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1rem;
+	cursor: pointer;
+	height: auto;
+	width: auto;
+	white-space: nowrap;
+}
+
+.return:hover{
+	background-color: #b7b675;
+}
+
+.reset{
+	background-color: #cb5a3c;
+	border: none;
+	margin-top: -20px;
+	color: white;
+	padding: 12px 18px;
+	border-radius: 8px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.reset:hover{
+	background-color: #7c2e18;
+}
+
+.submit{
+	background-color: #cb5a3c;
+	border: none;
+	margin-left: 20px;
+	color: white;
+	padding: 12px 18px;
+	border-radius: 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.submit:hover{
+	background-color: #7c2e18;
+}
+
+.puzzle1img{
+	position: absolute;
+	width: 100px;
+}
+
+.puzzle1imgheader {
+	cursor: move;
+	z-index: 4;
+}
+
+.puzzle2img{
+	position: absolute;
+	z-index: 9;
+}
+
+.puzzle2box{
+	width:450px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-x:hidden;
+	margin-bottom:50px;
+}
+
+
+.small{
+	height:50px;
+	width:50px;
+}
+
+.obstacle{
+	position:absolute;
+}
+
+.scroll-img{
+	margin: 200px auto;
+	height: auto;
+	z-index: 2;
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.vertical-center{
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+.stick{
+	position:sticky;
+	bottom: 0;
+	background-color: #2d2426;
+	padding:40px 0;
+	border-top: solid;
+	border-width: 2px;
+	border-color: #cb5a3c;
+}
+
+.hidden{
+	display:table-column-group;
+}
+
+.invisible{
+	visibility:hidden;
+	opacity:0;
+	transition:opacity 0.5s linear;
+}
+
+.visible{
+	visibility:visible;
+	opacity:1;
+}
+
+.one-column,
+.two-columns,
+.three-columns,
+.four-columns,
+.six-columns,
+.eight-columns,
+.ten-columns,
+.twelve-columns,
+.puzzle1imgContainer{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.one-column{
+	width: 8.333333%;
+}
+
+.two-columns{
+	width: 16.6666666666%;
+}
+
+.three-columns{
+	width: 25%;
+}
+
+.four-columns{
+	width: 33.333333%;
+}
+
+.six-columns{
+	width: 50%;
+}
+
+.eight-columns{
+	width: 66.666666%;
+}
+
+.ten-columns{
+	width: 83.33333333%;
+}
+
+.twelve-columns{
+	width: 100%;
+}
+
+.puzzle1imgContainer{
+	width: 14.2857143%;
+	height: 120px;
+}
+.puzzle2imgContainer{
+	width: 50px;
+	height: 50px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Music Chamber</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<main>
+			<header>
+				<div class="container">
+					<a href="../index.html" class="home">
+					<h1>Journey to the Mysterious Ruins</h1>
+					</a>
+				</div>
+			</header>
+			<article>
+				<div class="container">
+					<div class="twelve-columns">
+						<a class="return" href="story.html">&lt; Return to story</a>
+						<h3>The Music Chamber</h3>
+						<p>The adventurers stepped into a chamber where a simple tune was played. The door ahead had no handle, but had a riddle located on its front.</p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="four-columns centered" style="text-align:center;">
+						<p>I start with a t</p>
+						<p>Made by hot water</p>
+						<p>I have a 1 and a 2 but not a 3</p>
+						<p>The music holds the final clue</p>
+						<p>Say my name and behold the fame</p>
+						<audio controls id="puzzle4audio1">
+							<source src="../audio/caged.wav" type="audio/mpeg">
+							<source src="../audio/caged.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="container">
+					<div class="twelve-columns">
+						<p>Based on the final line, there was clearly treasure on the other side of the door! The adventurers were excited, but the clues left them thoroughly confused. This was referencing something clearly not from their world! They attempted various things, but could not figure anything out. Left with naught but a prayer, perhaps <i>you</i> can answer their despair?</p>
+					</div>
+				</div>
+				<div class="container">	
+					<div class="twelve-columns">
+						
+					</div>
+				</div>
+				<div class="container" style="margin-top:40px">
+					<div class="twelve-columns">
+						<h3>What word(s) should they say?</h3>
+					</div>
+				</div>
+				<div class="container">
+					<div class="twelve-columns">
+						<input type="text" id="puzzle4answer" value="Input answer here">
+						<input type="submit" class="submit" onClick="validateAnswer()" value="Guess">
+						<p id="answer4List"></p>
+					</div>
+				</div>
+			</article>
+		</main>
+		<script src="../js/js3.js"></script>
+	</body>
+</html>

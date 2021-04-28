@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	color: #d1d0a6;
+	background-color: #2d2426;
+	font-family: "Inconsolata", monospace;
+	margin: 0;
+	padding: 0;
+	overflow-x:hidden;
+}
+
+.container{
+	display: flex;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main{
+	padding-top: 60px;
+	margin: 0 auto;
+}
+
+h1,h3{
+	text-transform: uppercase;
+	margin: 0 0 30px;
+}
+
+h1{
+	text-align: center;
+	color: #cb5a3c;
+	font-size: 5.75rem;
+	font-weight: 700;
+	padding: 0;
+}
+
+h2{
+	font-size: 1.25rem;
+	line-height: 1.4;
+	font-weight: 400;
+	margin: 0 0 30px;
+}
+
+h4{
+	word-wrap:break-word;
+}
+
+p{
+	margin-bottom: 30px;
+	line-height: 1.5;
+}
+
+a{
+	color: #cb5a3c;
+	height: 100%;
+	width: 100%;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.home{
+	text-decoration:none;
+	z-index:4;
+}
+
+.return{
+	position:absolute;
+	background-color: #d1d0a6;
+	border: none;
+	margin-bottom: 20px;
+	padding: 12px 18px;
+	color: black;
+	border-radius: 8px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1rem;
+	cursor: pointer;
+	height: auto;
+	width: auto;
+	white-space: nowrap;
+	z-index:5;
+}
+
+.return:hover{
+	background-color: #b7b675;
+}
+
+.one-column,
+.two-columns,
+.three-columns,
+.four-columns,
+.six-columns,
+.eight-columns,
+.ten-columns,
+.twelve-columns,
+.puzzle1imgContainer{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.one-column{
+	width: 8.333333%;
+}
+
+.two-columns{
+	width: 16.6666666666%;
+}
+
+.three-columns{
+	width: 25%;
+}
+
+.four-columns{
+	width: 33.333333%;
+}
+
+.six-columns{
+	width: 50%;
+}
+
+.eight-columns{
+	width: 66.666666%;
+}
+
+.ten-columns{
+	width: 83.33333333%;
+}
+
+.twelve-columns{
+	width: 100%;
+}
+
+#subtitle{
+	margin-top: 55px;
+	position:absolute;
+	z-index:4;
+}
+
+#storyText{
+	margin-top: 80px;
+	position:absolute;
+	z-index:4;
+}
+
+#backdrop{
+	position:absolute;
+	z-index:0;
+	top:400px;
+	left:200px;
+}
+
+#topBorder{
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index: 2;
+}
+
+#leftBorder{
+	position:absolute;
+	top: 200px;
+	left: 0px;
+	z-index: 2;
+}
+
+#bottomBorder{
+	position:absolute;
+	top:1000px;
+	left:0px;
+	z-index: 2;
+}
+
+#rightBorder{
+	position:absolute;
+	top: 200px;
+	left: 1000px;
+	z-index: 2;
+}
+
+#search{
+	position:absolute;
+	z-index:1;
+	top:300px;
+	left:500px;
+	overflow: hidden;
+}
+
+#requiredClick{
+	position:absolute;
+	top:600px;
+	left:450px;
+	z-index: 3;
+}
+
+#requiredClick:hover{
+	cursor: pointer;
+}

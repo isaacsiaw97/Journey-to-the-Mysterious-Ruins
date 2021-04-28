@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	color: #d1d0a6;
+	background-color: #2d2426;
+	font-family: "Inconsolata", monospace;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	display: flex;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main{
+	padding-top: 60px;
+	margin: 0 auto;
+}
+
+h1,h3{
+	text-transform: uppercase;
+	margin: 0 0 30px;
+}
+
+h1{
+	text-align: center;
+	color: #cb5a3c;
+	font-size: 5.75rem;
+	font-weight: 700;
+	padding: 0;
+}
+
+h2{
+	font-size: 1.25rem;
+	line-height: 1.4;
+	font-weight: 400;
+	margin: 0 0 30px;
+}
+
+h4{
+	word-wrap:break-word;
+}
+
+p{
+	margin-bottom: 30px;
+	line-height: 1.5;
+}
+
+a{
+	color: #cb5a3c;
+	height: 100%;
+	width: 100%;
+}
+
+input{
+	padding: 12px 18px;
+	border-radius: 8px;
+	border: none;
+	font-size: 1rem;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.home{
+	text-decoration:none;
+}
+
+li{
+	color: #b53232;
+	list-style-type:none;
+}
+
+.twelve-columns{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.twelve-columns{
+	width: 100%;
+}
+
+.submit{
+	background-color: #cb5a3c;
+	border: none;
+	margin-left: 20px;
+	color: white;
+	padding: 12px 18px;
+	border-radius: 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.submit:hover{
+	background-color: #7c2e18;
+}
+
+.return{
+	background-color: #d1d0a6;
+	border: none;
+	margin-bottom: 20px;
+	padding: 12px 18px;
+	color: black;
+	border-radius: 8px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1rem;
+	cursor: pointer;
+	height: auto;
+	width: auto;
+	white-space: nowrap;
+}
+
+.return:hover{
+	background-color: #b7b675;
+}
+
+
+#enter{
+	position:absolute;
+	top:1000px;
+	left:700px;
+}
+
+#progress{
+	position:absolute;
+	top:700px;
+	left:650px;
+}
+
+#wrong{
+	position: absolute;
+	z-index: 3;
+	display: none;
+}
+
+#rightOne{
+	position: absolute;
+	z-index: 3;
+	display: none;
+}
+
+#rightTwo{
+	position: absolute;
+	z-index: 3;
+	display: none;
+}
+
+#rightThree{
+	position: absolute;
+	z-index: 3;
+	display: none;
+}
+
+#boardOne{
+	position: absolute;
+	z-index:0;
+	height:450px;
+	top: 500px;
+	left: 50px;
+}
+
+#boardOneKingW{
+	position: absolute;
+	z-index:2;
+	top: 850px;
+	left: 350px;
+}
+
+#boardOneQueenW{
+	position: absolute;
+	z-index:2;
+	top: 800px;
+	left: 150px;
+}
+
+#boardOneBishopW{
+	position: absolute;
+	z-index:2;
+	top: 550px;
+	left: 350px;
+}
+
+#boardOneRookW{
+	position: absolute;
+	z-index:2;
+	top: 750px;
+	left: 100px;
+}
+
+#boardOneKingB{
+	position: absolute;
+	z-index:1;
+	top: 600px;
+	left: 100px;
+}
+
+#boardOneBishopB{
+	position: absolute;
+	z-index:1;
+	top: 650px;
+	left: 100px;
+}
+
+#boardOneRookB{
+	position: absolute;
+	z-index:1;
+	top: 550px;
+	left: 100px;
+}
+
+#boardOneKnightB{
+	position: absolute;
+	z-index:1;
+	top: 550px;
+	left: 300px;
+}
+
+#boardOnePawnB{
+	position: absolute;
+	top: 750px;
+	left: 350px;
+}
+
+#boardTwo{
+	position: absolute;
+	top: 500px;
+	left:500px;
+}
+
+#boardTwoKingW{
+	position: absolute;
+	z-index:2;
+	top: 750px;
+	left: 600px;
+}
+
+#boardTwoQueenW{
+	position: absolute;
+	z-index:2;
+	top: 850px;
+	left: 750px;
+}
+
+#boardTwoRookW{
+	position: absolute;
+	z-index:1;
+	top: 850px;
+	left: 550px;
+}
+
+#boardTwoKnightW{
+	position: absolute;
+	z-index:1;
+	top: 600px;
+	left: 750px;
+}
+
+#boardTwoKingB{
+	position: absolute;
+	z-index:1;
+	top: 650px;
+	left: 600px;
+}
+
+#boardTwoRookB{
+	position: absolute;
+	z-index:1;
+	top: 800px;
+	left: 900px;
+}
+
+#boardTwoPawnB{
+	position: absolute;
+	top: 600px;
+	left: 650px;
+}
+
+#boardThree{
+	position: absolute;
+	padding-right: 100px;
+	top: 500px;
+	left: 950px;
+}
+
+#boardThreeKingW{
+	position: absolute;
+	z-index:2;
+	top: 850px;
+	left: 1150px;
+}
+
+#boardThreeBishopW{
+	position: absolute;
+	z-index:2;
+	top: 700px;
+	left: 1100px;
+}
+
+#boardThreeRookW{
+	position: absolute;
+	z-index:1;
+	top: 750px;
+	left: 1000px;
+}
+
+#boardThreeKingB{
+	position: absolute;
+	z-index:1;
+	top: 500px;
+	left: 1300px;
+}
+
+#boardThreeRookB{
+	position: absolute;
+	z-index:1;
+	top: 500px;
+	left: 1200px;
+}
+
+#boardThreeRookTwoB{
+	position: absolute;
+	z-index:1;
+	top: 500px;
+	left: 1350px;
+}
+
+#boardThreePawnB{
+	position: absolute;
+	top: 550px;
+	left: 1250px;
+}
+
+#boardThreePawnTwoB{
+	position: absolute;
+	top: 550px;
+	left: 1350px;
+}
